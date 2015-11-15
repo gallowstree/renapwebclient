@@ -1,0 +1,8 @@
+
+<?php
+$ip = "10.1.6.231";
+$url = "http://$ip/personas/0123456789";
+$content = file_get_contents($url);
+$json  = json_decode($content, true);
+echo "DPI: ". $json['nombre'];
+

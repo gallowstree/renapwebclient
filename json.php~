@@ -1,0 +1,25 @@
+
+<?php
+$ip = "10.1.6.231";
+$url = "http://$ip/personas/";
+$arreglo = array(
+		"dpi"			=>	"02",
+		"nombre"		=>	"Guimi",
+		"segundo_nombre"	=>	"Guimi",
+		"tercer_nombre" 	=>	"Guimi",
+		"primer_apellido"	=>	"Florian",
+		"segundo_apellido"	=>	null,
+		"genero"		=>	"m",
+		"nacimiento"		=>	"00\/00\/0000",
+		"id_municipio" 		=>	"1",	
+		"direccion" 		=>	"su casa",
+		"id_pais"		=>	"1"
+		);
+
+
+$json  = json_encode($arreglo);
+$urll = "http://$ip/personas/02";
+$content = file_get_contents($urll);
+$jsonn = json_decode($content, true);
+echo "DPI: ". $json['nombre'];
+?>
