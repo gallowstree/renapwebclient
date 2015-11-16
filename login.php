@@ -11,37 +11,33 @@
 <!-- InstanceBeginEditable name="head" -->
 <!-- InstanceEndEditable -->
 <link href="css/principal.css" rel="stylesheet" type="text/css" />
+<br><br><br><br><br><br>
 <?php include("includes/header.php"); ?>
 
 </head>
 
 <body>
-
-
-<div class="container">
-  <div class="header"><?php include("includes/cabecera.php"); ?></div> 
-  <p>&nbsp;</p> 
-  <div class="sidebar1"><?php include("includes/menuizquierda.php"); ?>
-  </div>
-  
-  <div class="content"><!-- InstanceBeginEditable name="Contenido" -->
-	    
-   <h1>Bienvenidos a RENAP</h1>
-	
-		<div class="footer">
-			<h4>Registro Nacional de las Personas.  Brinda información de los ciudadanos y residentes de Guatemala</h4> 
-			</div>		
-		</div>
+<form align="center">
+	<div>
+	  <div class="header"><?php include("includes/cabecera.php"); ?></div> 
+	  <p>&nbsp;</p> 
+	  
+	  
+		 
+	  <a><form action="" method="post" name="datos", align="center"></a>        
+				<br>	
+			  </tr valign="baseline">
+			  <td nowrap="nowrap" align="center">&nbsp;</td>
+			  <?php $login = window.open("http://192.168.0.104/oauth/authorize?client_id=<client_id>&response_type=code&state=ok"; ?>
+			  <td><input type="submit" class="boton" value="Ingresar" onClick="window.open('http://192.168.0.104/oauth/authorize?client_id=miguel&response_type=code&state=ok')" /></td>  
+			</table>  
+			
+			<br></br>				
 		
-		<div class="container" align="center">
-		<div class="header"><?php include("includes/afterbody.php"); ?></div> 
-		<p>&nbsp;</p> 
-		
-		
-		</table>
-		</form>
+			</form>			
+</form>			
+			
 </body>
-
 
 
 <!-- InstanceEnd --></html>

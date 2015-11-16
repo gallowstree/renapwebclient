@@ -28,6 +28,14 @@ p{
 }
 
 
+hr, .hrcolor {
+   height: 1px;
+   border: 0;
+   color: #666;
+   background-color: #32d7e6;
+}
+
+
 a img { /* este selector elimina el borde azul predeterminado que se muestra en algunos navegadores alrededor de una imagen cuando está rodeada por un vínculo */
 	border: none;
 }
@@ -190,9 +198,10 @@ ul.nav a:hover, ul.nav a:active, ul.nav a:focus { /* esto cambia el color de fon
 	font-weight: 100;
 	color: #A50505;
 }
+     
+  
+  
+  
+  
 
-
-
-.cajaredondeada {
-
-}
+  

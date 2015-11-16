@@ -17,7 +17,6 @@
 </head>
 
 <body>
-<?php include("includes/afterbody.php"); ?>
 
 <div class="container">
   <div class="header"><?php include("includes/cabecera.php"); ?></div> 
@@ -69,7 +68,7 @@
 			<td>
 				
 			<?php
-			$urll = "http://192.168.1.17/departamentos/";
+			$urll = "http://192.168.0.101:8080/departamentos/";
 			$contentt = file_get_contents($urll);
 			$json  = json_decode($contentt, true);
 			$dep = $json_decode['nombre'];
@@ -108,7 +107,7 @@
 	</table>	
 	
 	<?php
-	$url = "http://192.168.1.17/personas/";
+	$url = "http://192.168.0.101:8080/personas/";
     $cui = $_POST['cui'];
     $nombre = $_POST['nombre'];
     $nombredos = $_POST['nombredos'];
